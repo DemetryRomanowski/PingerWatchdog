@@ -1,0 +1,37 @@
+{ 
+    "Site": "Allans Home Hardware",
+    
+    "Ips": [
+        "192.168.1.1",
+        "192.168.1.4", 
+        "192.168.5.6", 
+        "13.54.0.1"
+    ],
+    
+    "SendEmail": true,
+    "EmailAddressToSendTo": "alerts@techgalaxy.ca",
+    "EmailContentsToSend": "Lost connection to devices listed: ",
+    
+    //Data
+    "FromAddress": "email@techgalaxy.ca", 
+    "Host": "smtp.office365.com", 
+    "Port": 587, 
+    "Password": "password",
+
+    //To send a text message you must have a twilio account
+    "SendTextMessage": true,
+    "PhoneNumbersToSendTo": [
+        "1-705-465-0122",
+        "1-705-271-5704"
+    ],
+    "TextMessageContents": "Lost connection to devices listed: ",
+    
+    "MilliSecondsBeforePing": 1000,
+    "MaxFailedPingCount": 5,
+    
+    "LogLevel": "FATAL",
+    
+    "TwilioAccountSID": null,
+    "TwilioAuthToken": null
+}
+

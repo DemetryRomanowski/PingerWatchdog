@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using PingerWatchdog.Logger;
 
 namespace PingerWatchdog
 {
@@ -55,9 +56,6 @@ namespace PingerWatchdog
                 Thread.Sleep(MilliSecondsToPing);
                 Ping();    
             }
-
-            //Sleep for 5 seconds before terminating
-            Thread.Sleep(5000);
         }
         
         /// <summary>
@@ -69,20 +67,19 @@ namespace PingerWatchdog
             {
                 FailedCount++;
 
-                Console.WriteLine("Ping Failed");
+                Logger.Logger.Log(LogLevel.DEBUG, $"Ping Failed to: {Address}");
+
+                if (FailedCount < MaxFailCount) return;
                 
-                if (FailedCount >= MaxFailCount)
-                {
-                    //TODO(Demetry): Implement text message
-                    Console.WriteLine($"Lost connection to: {Address}");
-                    Enabled = false;
-                }
+                //TODO(Demetry): Implement text message
+                Logger.Logger.Log(LogLevel.DEBUG, $"Lost connection to: {Address}");
+                Enabled = false;
             }
             else
             {
                 FailedCount = 0;
                 
-                Console.WriteLine("Ping Success");
+                Logger.Logger.Log(LogLevel.DEBUG, $"Ping Success to {Address}");
             }
         }
     }

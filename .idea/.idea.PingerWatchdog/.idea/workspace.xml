@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d106440-4d06-479c-8a9c-180735380ed8" name="Default" comment="" />
+    <list default="true" id="6d106440-4d06-479c-8a9c-180735380ed8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.PingerWatchdog/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PingerWatchdog/TypeConverters/LogLevelConverter.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.PingerWatchdog/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.PingerWatchdog/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PingerWatchdog/Config.cs" afterPath="$PROJECT_DIR$/PingerWatchdog/Config.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs" afterPath="$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs" afterPath="$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.cs" afterPath="$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.csproj" afterPath="$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PingerWatchdog/packages.config" afterPath="$PROJECT_DIR$/PingerWatchdog/packages.config" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,34 +28,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PingerWatchdog.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PingerWatchdog.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="868">
-              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="630">
+              <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
-                <marker date="1504151847667" expanded="true" signature="6:124" ph="..." />
-                <marker date="1504151847667" expanded="true" signature="150:1110" ph="{...}" />
-                <marker date="1504151847667" expanded="true" signature="186:1108" ph="{...}" />
-                <marker date="1504151847667" expanded="true" signature="201:282" ph="/// The log level of the application ... " />
-                <marker date="1504151847667" expanded="true" signature="347:424" ph="/// The config file deserialized ... " />
-                <marker date="1504151847667" expanded="true" signature="658:785" ph="/// Default ctor ... " />
-                <marker date="1504151847667" expanded="true" signature="832:954" ph="{...}" />
-                <marker date="1504151847667" expanded="true" signature="964:1041" ph="/// The instanciated entry point ... " />
-                <marker date="1504151847667" expanded="true" signature="1069:1102" ph="{...}" />
+                <marker date="1504240938837" expanded="false" signature="6:124" ph="..." />
+                <marker date="1504240938837" expanded="true" signature="150:1749" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="186:1747" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="201:282" ph="/// The log level of the application ... " />
+                <marker date="1504240938837" expanded="true" signature="355:432" ph="/// The config file deserialized ... " />
+                <marker date="1504240938837" expanded="true" signature="627:974" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="653:964" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="687:783" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="819:921" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="984:1111" ph="/// Default ctor ... " />
+                <marker date="1504240938837" expanded="true" signature="1158:1280" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="1290:1367" ph="/// The instanciated entry point ... " />
+                <marker date="1504240938837" expanded="true" signature="1395:1741" ph="{...}" />
+                <marker date="1504240938837" expanded="true" signature="1451:1698" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogLevel.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PingerWatchdog/Logger/LogLevel.cs">
+      <file leaf-file-name="Config.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PingerWatchdog/Config.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="195">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
-                <marker date="1504151007408" expanded="true" signature="31:262" ph="{...}" />
-                <marker date="1504151007408" expanded="true" signature="58:260" ph="{...}" />
+                <marker date="1504241981881" expanded="false" signature="6:42" ph="..." />
+                <marker date="1504241981881" expanded="true" signature="68:736" ph="{...}" />
+                <marker date="1504241981881" expanded="true" signature="94:734" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogLevelConverter.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PingerWatchdog/TypeConverters/LogLevelConverter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding>
+                <marker date="1504239634533" expanded="true" signature="6:42" ph="..." />
+                <marker date="1504239634533" expanded="true" signature="83:1315" ph="{...}" />
+                <marker date="1504239634533" expanded="true" signature="127:1313" ph="{...}" />
+                <marker date="1504239634533" expanded="true" signature="142:348" ph="/// Convert the string name to the log level ... " />
+                <marker date="1504239634533" expanded="true" signature="414:695" ph="{...}" />
+                <marker date="1504239634533" expanded="true" signature="705:919" ph="/// Convert the log level to string ... " />
+                <marker date="1504239634533" expanded="true" signature="983:1307" ph="{...}" />
+                <marker date="1504239634533" expanded="true" signature="1020:1297" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -54,67 +89,63 @@
       <file leaf-file-name="PingerUtil.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1259">
-              <caret line="60" column="9" lean-forward="false" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+            <state relative-caret-position="386">
+              <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
               <folding>
-                <marker date="1504150879822" expanded="true" signature="6:37" ph="..." />
-                <marker date="1504150879822" expanded="true" signature="63:2471" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="93:2469" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="108:269" ph="PrivateMembers" />
-                <marker date="1504150879822" expanded="true" signature="287:792" ph="PublicMembers" />
-                <marker date="1504150879822" expanded="true" signature="326:420" ph="/// The maximum fail count before sending message ... " />
-                <marker date="1504150879822" expanded="true" signature="487:576" ph="/// The amount of time before a ping is sent ... " />
-                <marker date="1504150879822" expanded="true" signature="652:720" ph="/// The address to ping ... " />
-                <marker date="1504150879822" expanded="true" signature="810:1127" ph="/// Default constructor ... " />
-                <marker date="1504150879822" expanded="true" signature="1215:1376" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="1386:1464" ph="/// The run method for the thread ... " />
-                <marker date="1504150879822" expanded="true" signature="1490:1761" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="1559:1665" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="1779:1844" ph="/// Test the address ... " />
-                <marker date="1504150879822" expanded="true" signature="1872:2463" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="1925:2307" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="2087:2293" ph="{...}" />
-                <marker date="1504150879822" expanded="true" signature="2324:2453" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="6:66" ph="..." />
+                <marker date="1504241882188" expanded="true" signature="92:2451" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="122:2449" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="137:298" ph="PrivateMembers" />
+                <marker date="1504241882188" expanded="true" signature="316:821" ph="PublicMembers" />
+                <marker date="1504241882188" expanded="true" signature="355:449" ph="/// The maximum fail count before sending message ... " />
+                <marker date="1504241882188" expanded="true" signature="516:605" ph="/// The amount of time before a ping is sent ... " />
+                <marker date="1504241882188" expanded="true" signature="681:749" ph="/// The address to ping ... " />
+                <marker date="1504241882188" expanded="true" signature="839:1156" ph="/// Default constructor ... " />
+                <marker date="1504241882188" expanded="true" signature="1244:1405" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="1415:1493" ph="/// The run method for the thread ... " />
+                <marker date="1504241882188" expanded="true" signature="1519:1704" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="1588:1694" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="1722:1787" ph="/// Test the address ... " />
+                <marker date="1504241882188" expanded="true" signature="1815:2443" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="1868:2257" ph="{...}" />
+                <marker date="1504241882188" expanded="true" signature="2274:2433" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logger.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Logger.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="227">
+              <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
               <folding>
-                <marker date="1504151247682" expanded="true" signature="46:829" ph="{...}" />
-                <marker date="1504151247682" expanded="true" signature="79:827" ph="{...}" />
-                <marker date="1504151247682" expanded="true" signature="132:820" ph="{...}" />
-                <marker date="1504151247682" expanded="true" signature="188:810" ph="{...}" />
+                <marker date="1504243368852" expanded="true" signature="6:86" ph="..." />
+                <marker date="1504243368852" expanded="true" signature="119:1304" ph="{...}" />
+                <marker date="1504243368852" expanded="true" signature="152:1302" ph="{...}" />
+                <marker date="1504243368852" expanded="true" signature="304:501" ph="/// Log the message ... " />
+                <marker date="1504243368852" expanded="true" signature="571:922" ph="{...}" />
+                <marker date="1504243368852" expanded="true" signature="821:912" ph="{...}" />
+                <marker date="1504243368852" expanded="true" signature="932:1132" ph="/// Print the message onto the console ... " />
+                <marker date="1504243368852" expanded="true" signature="1203:1296" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Settings.resx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PingerWatchdog/Resources/Settings.resx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/PingerWatchdog/PingHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PingerWatchdog/Config.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PingerWatchdog/Logger/LogLevel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PingerWatchdog/TypeConverters/LogLevelConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PingerWatchdog/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A3756D-071F-4510-B4AF-11DADA4515AA/e8/f0af4543/Int32.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/PingerWatchdog/PingHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -122,11 +153,13 @@
         <option value="$PROJECT_DIR$/PingerWatchdog/Resources/Settings.resx" />
         <option value="$PROJECT_DIR$/PingerWatchdog/Program.cs" />
         <option value="$PROJECT_DIR$/PingerWatchdog/Pinger.cs" />
-        <option value="$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs" />
         <option value="$PROJECT_DIR$/PingerWatchdog/Logger/LogLevel.cs" />
-        <option value="$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs" />
-        <option value="$PROJECT_DIR$/PingerWatchdog/Config.cs" />
+        <option value="$PROJECT_DIR$/PingerWatchdog/Type Converters/LogLevelConverter.cs" />
+        <option value="$PROJECT_DIR$/PingerWatchdog/TypeConverters/LogLevelConverter.cs" />
         <option value="$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.cs" />
+        <option value="$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs" />
+        <option value="$PROJECT_DIR$/PingerWatchdog/Config.cs" />
+        <option value="$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs" />
       </list>
     </option>
   </component>
@@ -137,10 +170,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1032" />
-    <option name="y" value="-113" />
-    <option name="width" value="1040" />
-    <option name="height" value="1266" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="776" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -157,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <PATH>
@@ -187,7 +224,7 @@
               <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Logger" />
+              <option name="myItemId" value="TypeConverters" />
               <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -195,7 +232,6 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,11 +338,12 @@
       <updated>1504031265825</updated>
       <workItem from="1504031267356" duration="2535000" />
       <workItem from="1504039036141" duration="6873000" />
+      <workItem from="1504236950540" duration="6923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9408000" />
+    <option name="totallyTimeSpent" value="16331000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,23 +355,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1032" y="-113" width="1040" height="1266" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291592" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291592" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26020408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998211" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998211" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -360,15 +397,105 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504151847667" expanded="true" signature="6:124" ph="..." />
-            <marker date="1504151847667" expanded="true" signature="150:1110" ph="{...}" />
-            <marker date="1504151847667" expanded="true" signature="186:1108" ph="{...}" />
-            <marker date="1504151847667" expanded="true" signature="201:282" ph="/// The log level of the application ... " />
-            <marker date="1504151847667" expanded="true" signature="347:424" ph="/// The config file deserialized ... " />
-            <marker date="1504151847667" expanded="true" signature="658:785" ph="/// Default ctor ... " />
-            <marker date="1504151847667" expanded="true" signature="832:954" ph="{...}" />
-            <marker date="1504151847667" expanded="true" signature="964:1041" ph="/// The instanciated entry point ... " />
-            <marker date="1504151847667" expanded="true" signature="1069:1102" ph="{...}" />
+            <marker date="1504240938837" expanded="false" signature="6:124" ph="..." />
+            <marker date="1504240938837" expanded="true" signature="150:1749" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="186:1747" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="201:282" ph="/// The log level of the application ... " />
+            <marker date="1504240938837" expanded="true" signature="355:432" ph="/// The config file deserialized ... " />
+            <marker date="1504240938837" expanded="true" signature="627:974" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="653:964" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="687:783" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="819:921" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="984:1111" ph="/// Default ctor ... " />
+            <marker date="1504240938837" expanded="true" signature="1158:1280" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="1290:1367" ph="/// The instanciated entry point ... " />
+            <marker date="1504240938837" expanded="true" signature="1395:1741" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="1451:1698" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/Logger/LogLevel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <marker date="1504232516048" expanded="true" signature="31:262" ph="{...}" />
+            <marker date="1504232516048" expanded="true" signature="58:260" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="9" lean-forward="false" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <marker date="1504241882188" expanded="true" signature="6:66" ph="..." />
+            <marker date="1504241882188" expanded="true" signature="92:2451" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="122:2449" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="137:298" ph="PrivateMembers" />
+            <marker date="1504241882188" expanded="true" signature="316:821" ph="PublicMembers" />
+            <marker date="1504241882188" expanded="true" signature="355:449" ph="/// The maximum fail count before sending message ... " />
+            <marker date="1504241882188" expanded="true" signature="516:605" ph="/// The amount of time before a ping is sent ... " />
+            <marker date="1504241882188" expanded="true" signature="681:749" ph="/// The address to ping ... " />
+            <marker date="1504241882188" expanded="true" signature="839:1156" ph="/// Default constructor ... " />
+            <marker date="1504241882188" expanded="true" signature="1244:1405" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1415:1493" ph="/// The run method for the thread ... " />
+            <marker date="1504241882188" expanded="true" signature="1519:1704" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1588:1694" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1722:1787" ph="/// Test the address ... " />
+            <marker date="1504241882188" expanded="true" signature="1815:2443" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1868:2257" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="2274:2433" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <marker date="1504243368852" expanded="true" signature="6:86" ph="..." />
+            <marker date="1504243368852" expanded="true" signature="119:1304" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="152:1302" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="304:501" ph="/// Log the message ... " />
+            <marker date="1504243368852" expanded="true" signature="571:922" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="821:912" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="932:1132" ph="/// Print the message onto the console ... " />
+            <marker date="1504243368852" expanded="true" signature="1203:1296" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/Resources/Settings.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504240938837" expanded="false" signature="6:124" ph="..." />
+            <marker date="1504240938837" expanded="true" signature="150:1749" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="186:1747" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="201:282" ph="/// The log level of the application ... " />
+            <marker date="1504240938837" expanded="true" signature="355:432" ph="/// The config file deserialized ... " />
+            <marker date="1504240938837" expanded="true" signature="627:974" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="653:964" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="687:783" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="819:921" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="984:1111" ph="/// Default ctor ... " />
+            <marker date="1504240938837" expanded="true" signature="1158:1280" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="1290:1367" ph="/// The instanciated entry point ... " />
+            <marker date="1504240938837" expanded="true" signature="1395:1741" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="1451:1698" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -377,13 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <marker date="1504150333453" expanded="false" signature="6:94" ph="..." />
-            <marker date="1504150333453" expanded="true" signature="120:681" ph="{...}" />
-            <marker date="1504150333453" expanded="true" signature="157:679" ph="{...}" />
-            <marker date="1504150333453" expanded="true" signature="172:375" ph="/// Function to ping an ip address ... " />
-            <marker date="1504150333453" expanded="true" signature="426:673" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -395,114 +515,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A3756D-071F-4510-B4AF-11DADA4515AA/e8/f0af4543/Int32.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A3756D-071F-4510-B4AF-11DADA4515AA/e8/f0af4543/Int32.cs" />
     <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <marker date="1504150333453" expanded="false" signature="6:94" ph="..." />
-            <marker date="1504150333453" expanded="true" signature="120:681" ph="{...}" />
-            <marker date="1504150333453" expanded="true" signature="157:679" ph="{...}" />
-            <marker date="1504150333453" expanded="true" signature="172:375" ph="/// Function to ping an ip address ... " />
-            <marker date="1504150333453" expanded="true" signature="426:673" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PingerWatchdog/Resources/Settings.resx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="75">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <marker date="1504151247682" expanded="true" signature="46:829" ph="{...}" />
-            <marker date="1504151247682" expanded="true" signature="79:827" ph="{...}" />
-            <marker date="1504151247682" expanded="true" signature="132:820" ph="{...}" />
-            <marker date="1504151247682" expanded="true" signature="188:810" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1259">
-          <caret line="60" column="9" lean-forward="false" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-          <folding>
-            <marker date="1504150879822" expanded="true" signature="6:37" ph="..." />
-            <marker date="1504150879822" expanded="true" signature="63:2471" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="93:2469" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="108:269" ph="PrivateMembers" />
-            <marker date="1504150879822" expanded="true" signature="287:792" ph="PublicMembers" />
-            <marker date="1504150879822" expanded="true" signature="326:420" ph="/// The maximum fail count before sending message ... " />
-            <marker date="1504150879822" expanded="true" signature="487:576" ph="/// The amount of time before a ping is sent ... " />
-            <marker date="1504150879822" expanded="true" signature="652:720" ph="/// The address to ping ... " />
-            <marker date="1504150879822" expanded="true" signature="810:1127" ph="/// Default constructor ... " />
-            <marker date="1504150879822" expanded="true" signature="1215:1376" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="1386:1464" ph="/// The run method for the thread ... " />
-            <marker date="1504150879822" expanded="true" signature="1490:1761" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="1559:1665" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="1779:1844" ph="/// Test the address ... " />
-            <marker date="1504150879822" expanded="true" signature="1872:2463" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="1925:2307" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="2087:2293" ph="{...}" />
-            <marker date="1504150879822" expanded="true" signature="2324:2453" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PingerWatchdog/Logger/LogLevel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="150">
           <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
-            <marker date="1504151007408" expanded="true" signature="31:262" ph="{...}" />
-            <marker date="1504151007408" expanded="true" signature="58:260" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PingerWatchdog/Config.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <marker date="1504151755049" expanded="true" signature="6:42" ph="..." />
-            <marker date="1504151755049" expanded="true" signature="68:880" ph="{...}" />
-            <marker date="1504151755049" expanded="true" signature="94:878" ph="{...}" />
-            <marker date="1504151755049" expanded="true" signature="577:872" ph="{...}" />
+            <marker date="1504232516048" expanded="true" signature="31:262" ph="{...}" />
+            <marker date="1504232516048" expanded="true" signature="58:260" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingerWatchdog.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="630">
+          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
-            <marker date="1504151847667" expanded="true" signature="6:124" ph="..." />
-            <marker date="1504151847667" expanded="true" signature="150:1110" ph="{...}" />
-            <marker date="1504151847667" expanded="true" signature="186:1108" ph="{...}" />
-            <marker date="1504151847667" expanded="true" signature="201:282" ph="/// The log level of the application ... " />
-            <marker date="1504151847667" expanded="true" signature="347:424" ph="/// The config file deserialized ... " />
-            <marker date="1504151847667" expanded="true" signature="658:785" ph="/// Default ctor ... " />
-            <marker date="1504151847667" expanded="true" signature="832:954" ph="{...}" />
-            <marker date="1504151847667" expanded="true" signature="964:1041" ph="/// The instanciated entry point ... " />
-            <marker date="1504151847667" expanded="true" signature="1069:1102" ph="{...}" />
+            <marker date="1504240938837" expanded="false" signature="6:124" ph="..." />
+            <marker date="1504240938837" expanded="true" signature="150:1749" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="186:1747" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="201:282" ph="/// The log level of the application ... " />
+            <marker date="1504240938837" expanded="true" signature="355:432" ph="/// The config file deserialized ... " />
+            <marker date="1504240938837" expanded="true" signature="627:974" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="653:964" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="687:783" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="819:921" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="984:1111" ph="/// Default ctor ... " />
+            <marker date="1504240938837" expanded="true" signature="1158:1280" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="1290:1367" ph="/// The instanciated entry point ... " />
+            <marker date="1504240938837" expanded="true" signature="1395:1741" ph="{...}" />
+            <marker date="1504240938837" expanded="true" signature="1451:1698" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/Config.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <marker date="1504241981881" expanded="false" signature="6:42" ph="..." />
+            <marker date="1504241981881" expanded="true" signature="68:736" ph="{...}" />
+            <marker date="1504241981881" expanded="true" signature="94:734" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/TypeConverters/LogLevelConverter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1504239634533" expanded="true" signature="6:42" ph="..." />
+            <marker date="1504239634533" expanded="true" signature="83:1315" ph="{...}" />
+            <marker date="1504239634533" expanded="true" signature="127:1313" ph="{...}" />
+            <marker date="1504239634533" expanded="true" signature="142:348" ph="/// Convert the string name to the log level ... " />
+            <marker date="1504239634533" expanded="true" signature="414:695" ph="{...}" />
+            <marker date="1504239634533" expanded="true" signature="705:919" ph="/// Convert the log level to string ... " />
+            <marker date="1504239634533" expanded="true" signature="983:1307" ph="{...}" />
+            <marker date="1504239634533" expanded="true" signature="1020:1297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/PingerUtil.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+          <folding>
+            <marker date="1504241882188" expanded="true" signature="6:66" ph="..." />
+            <marker date="1504241882188" expanded="true" signature="92:2451" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="122:2449" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="137:298" ph="PrivateMembers" />
+            <marker date="1504241882188" expanded="true" signature="316:821" ph="PublicMembers" />
+            <marker date="1504241882188" expanded="true" signature="355:449" ph="/// The maximum fail count before sending message ... " />
+            <marker date="1504241882188" expanded="true" signature="516:605" ph="/// The amount of time before a ping is sent ... " />
+            <marker date="1504241882188" expanded="true" signature="681:749" ph="/// The address to ping ... " />
+            <marker date="1504241882188" expanded="true" signature="839:1156" ph="/// Default constructor ... " />
+            <marker date="1504241882188" expanded="true" signature="1244:1405" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1415:1493" ph="/// The run method for the thread ... " />
+            <marker date="1504241882188" expanded="true" signature="1519:1704" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1588:1694" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1722:1787" ph="/// Test the address ... " />
+            <marker date="1504241882188" expanded="true" signature="1815:2443" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="1868:2257" ph="{...}" />
+            <marker date="1504241882188" expanded="true" signature="2274:2433" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PingerWatchdog/Logger/Logger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <marker date="1504243368852" expanded="true" signature="6:86" ph="..." />
+            <marker date="1504243368852" expanded="true" signature="119:1304" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="152:1302" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="304:501" ph="/// Log the message ... " />
+            <marker date="1504243368852" expanded="true" signature="571:922" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="821:912" ph="{...}" />
+            <marker date="1504243368852" expanded="true" signature="932:1132" ph="/// Print the message onto the console ... " />
+            <marker date="1504243368852" expanded="true" signature="1203:1296" ph="{...}" />
           </folding>
         </state>
       </provider>

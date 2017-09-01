@@ -12,15 +12,30 @@ namespace PingerWatchdog
         /// <summary>
         /// The log level of the application
         /// </summary>
-        public static LogLevel LOG_LEVEL { get; set; }
+        public static LogLevel VISIBLE_LOG_LEVEL { get; set; }
 
         /// <summary>
         /// The config file deserialized
         /// </summary>
-        public Config Config => JsonConvert.DeserializeObject<Config>(ConfigContents); 
+        public static Config Config => JsonConvert.DeserializeObject<Config>(ConfigContents); 
         
         //Get the contents of the config file
-        private static String ConfigContents => File.ReadAllText("config.json");
+        private static String ConfigContents
+        {
+            get
+            {
+                try
+                {
+                    return File.ReadAllText("config.json");
+                }
+                catch (Exception e)
+                {
+                    Logger.Logger.Log(LogLevel.FATAL, e.Message);
+                }
+
+                return ""; 
+            }
+        }
 
         /// <summary>
         /// Default ctor
@@ -37,7 +52,15 @@ namespace PingerWatchdog
         /// </summary>
         public void Start()
         {
-            
+            foreach (String ip in Config.Ips)
+            {
+                PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing, ip);
+                Thread thread = new Thread(pinger.Run);
+                
+                thread.Start();
+            }
+
+            Console.ReadKey(); 
         }
     }
 }
