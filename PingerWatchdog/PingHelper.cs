@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Net;
 using System.Net.NetworkInformation;
+using PingerWatchdog.Logger;
 
 namespace PingerWatchdog
 {
@@ -14,13 +14,28 @@ namespace PingerWatchdog
         /// <returns>True if the ping was a success</returns>
         public static Boolean Ping(String address)
         {
-            Ping ping = new Ping();
+            try
+            {
+                Ping ping = new Ping();
 
-            PingReply result = ping.Send(address);
+                PingReply result = ping.Send(address);
 
-            Debug.Assert(result != null, "Now you fucked up...");
-            
-            return result.Status.ToString() == "Success"; 
+                Debug.Assert(result != null, "Now you fucked up...");
+
+                return result.Status.ToString() == "Success";
+            }
+            catch (NetworkInformationException)
+            {
+                Logger.Logger.Log(LogLevel.ERROR, "Lost entire network connection");
+
+                return false;
+            }
+            catch (Exception)
+            {
+                Logger.Logger.Log(LogLevel.FATAL, "Something went wrong...");
+
+                return false;
+            }
         }
     }
 }
