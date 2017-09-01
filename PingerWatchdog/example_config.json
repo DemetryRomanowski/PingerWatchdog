@@ -1,0 +1,47 @@
+{ 
+    "Site": "Allans Home Hardware",
+    
+    "Devices": [
+        {
+            "Ip": "", 
+            "Name": ""
+        },
+        {
+            "Ip": "", 
+            "Name": ""
+        },
+        {
+            "Ip": "", 
+            "Name": ""
+        }
+    ],
+    
+    
+    "SendEmail": true,
+    "EmailAddressToSendTo": "alerts@yourcompany.ca",
+    "EmailContentsToSend": "Lost connection to devices listed: ",
+    
+    //Data
+    "FromAddress": "email@yourcompany.ca", 
+    "Host": "smtp.office365.com", 
+    "Port": 587, 
+    "Password": "password",
+
+    //To send a text message you must have a twilio account
+    "SendTextMessage": true,
+    "FromNumber": "+12048005280",
+    "PhoneNumbersToSendTo": [
+        "+17054650122",
+        "+17052715704"
+    ],
+    "TextMessageContents": "Lost connection to devices listed: ",
+    
+    "MilliSecondsBeforePing": 1000,
+    "MaxFailedPingCount": 5,
+    
+    "LogLevel": "FATAL",
+    
+    "TwilioAccountSID": "",
+    "TwilioAuthToken": ""
+}
+
