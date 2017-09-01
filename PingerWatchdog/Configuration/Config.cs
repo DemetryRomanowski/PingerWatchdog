@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Security;
 
 namespace PingerWatchdog.Configuration
 {
+    [SecurityCritical]
     public class Config
     {
         public String Site;

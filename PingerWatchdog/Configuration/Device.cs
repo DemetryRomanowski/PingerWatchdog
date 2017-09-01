@@ -5,6 +5,6 @@ namespace PingerWatchdog.Configuration
     public class Device
     {
         public String Ip;
-        public String DeviceName; 
+        public String Name; 
     }
 }

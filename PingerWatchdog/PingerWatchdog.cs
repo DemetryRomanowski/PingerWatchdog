@@ -56,7 +56,7 @@ namespace PingerWatchdog
         {
             foreach (Device device in Config.Devices)
             {
-                PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing, device.Ip, device.DeviceName);
+                PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing, device.Ip, device.Name);
                 Thread thread = new Thread(pinger.Run);
                 
                 thread.Start();

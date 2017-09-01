@@ -82,6 +82,10 @@ namespace PingerWatchdog
                     foreach (String pNumber in PingerWatchdog.Config.PhoneNumbersToSendTo)
                         util.SendMessage(pNumber, $"Lost connection to: {DeviceName} - {Address} @ {DateTime.Now}");
 
+                    EmailUtil email = new EmailUtil();
+                    
+                    email.SendMessage($"Lost connection to: {DeviceName} - {Address} @ {DateTime.Now}", Logger.Logger.FileName);
+                    
                     Logger.Logger.Log(LogLevel.MESSAGE, $"Lost connection to: {DeviceName} - {Address}");
 
                     //Kill the thread
