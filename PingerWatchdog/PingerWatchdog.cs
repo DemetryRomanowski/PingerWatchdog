@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using System.Net;
 using System.Threading;
 using Newtonsoft.Json;
+using PingerWatchdog.Configuration;
 using PingerWatchdog.Logger;
 
 namespace PingerWatchdog
@@ -17,7 +17,7 @@ namespace PingerWatchdog
         /// <summary>
         /// The config file deserialized
         /// </summary>
-        public static Config Config => JsonConvert.DeserializeObject<Config>(ConfigContents); 
+        public static Config Config;
         
         //Get the contents of the config file
         private static String ConfigContents
@@ -43,6 +43,8 @@ namespace PingerWatchdog
         /// <param name="args">Array of cmdline arguments</param>
         public static void Main(String[] args)
         {
+            Config = JsonConvert.DeserializeObject<Config>(ConfigContents); 
+            
             PingerWatchdog watchdog = new PingerWatchdog();
             watchdog.Start();            
         }
@@ -52,9 +54,9 @@ namespace PingerWatchdog
         /// </summary>
         public void Start()
         {
-            foreach (String ip in Config.Ips)
+            foreach (Device device in Config.Devices)
             {
-                PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing, ip);
+                PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing, device.Ip, device.DeviceName);
                 Thread thread = new Thread(pinger.Run);
                 
                 thread.Start();

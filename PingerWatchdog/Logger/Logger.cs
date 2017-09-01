@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Text;
 using PingerWatchdog.TypeConverters;
 
 namespace PingerWatchdog.Logger
@@ -10,6 +9,8 @@ namespace PingerWatchdog.Logger
         //The filename of the logfile
         private static readonly String FileName = $"log_{DateTime.Now.ToFileTime()}.txt";
         
+        private static readonly Object Mutex = new Object(); 
+        
         /// <summary>
         /// Log the message
         /// </summary>
@@ -17,14 +18,17 @@ namespace PingerWatchdog.Logger
         /// <param name="message">The message to log</param>
         public static void Log(LogLevel currentLevel, String message)
         {
-            if (PingerWatchdog.VISIBLE_LOG_LEVEL != currentLevel) return;
+//            if (PingerWatchdog.VISIBLE_LOG_LEVEL != currentLevel) return;
             
             Console.WriteLine(PrintLog(currentLevel, message));
 
-            using (StreamWriter fs = 
-                new StreamWriter(FileName, true))
+            lock (Mutex)
             {
-                fs.WriteLine(PrintLog(currentLevel, message));
+                using (StreamWriter fs =
+                    new StreamWriter(FileName, true))
+                {
+                    fs.WriteLine(PrintLog(currentLevel, message));
+                }
             }
         }
 
@@ -35,7 +39,7 @@ namespace PingerWatchdog.Logger
         /// <param name="message">The message to print</param>
         private static String PrintLog(LogLevel level, String message)
         {
-            return $"{level.ConvertString()}@{DateTime.Now}: {message}";
+            return $"{level.ConvertString()}::{PingerWatchdog.Config.Site} @ {DateTime.Now}: {message}";
         }
     }
 }

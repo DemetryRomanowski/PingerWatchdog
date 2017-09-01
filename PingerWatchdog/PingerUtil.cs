@@ -18,17 +18,22 @@ namespace PingerWatchdog
         /// <summary>
         /// The maximum fail count before sending message
         /// </summary>
-        public Int32 MaxFailCount { get; set; } = 5;
+        public Int32 MaxFailCount { get; set; }
     
         /// <summary>
         /// The amount of time before a ping is sent
         /// </summary>
-        public Int32 MilliSecondsToPing { get; set; } = 1000;
+        public Int32 MilliSecondsToPing { get; set; }
     
         /// <summary>
         /// The address to ping
         /// </summary>
         public String Address { get; set; }
+        
+        /// <summary>
+        /// The device name
+        /// </summary>
+        public String DeviceName { get; set; }
         
         #endregion
         
@@ -38,11 +43,12 @@ namespace PingerWatchdog
         /// <param name="MaxFailCount">The maximum fail count before sending message</param>
         /// <param name="MilliSecondsToPing">The amount of time before a ping is sent</param>
         /// <param name="Address">The address to ping</param>
-        public PingerUtil(Int32 MaxFailCount, Int32 MilliSecondsToPing, String Address)
+        public PingerUtil(Int32 MaxFailCount, Int32 MilliSecondsToPing, String Address, String DeviceName)
         {
             this.MaxFailCount = MaxFailCount;
             this.MilliSecondsToPing = MilliSecondsToPing;
-            this.Address = Address; 
+            this.Address = Address;
+            this.DeviceName = DeviceName;
         }
 
         /// <summary>
@@ -67,19 +73,26 @@ namespace PingerWatchdog
             {
                 FailedCount++;
 
-                Logger.Logger.Log(LogLevel.DEBUG, $"Ping Failed to: {Address}");
+                Logger.Logger.Log(LogLevel.MESSAGE, $"Ping Failed to: {DeviceName} - {Address}");
 
-                if (FailedCount < MaxFailCount) return;
-                
-                //TODO(Demetry): Implement text message
-                Logger.Logger.Log(LogLevel.DEBUG, $"Lost connection to: {Address}");
-                Enabled = false;
+                if (FailedCount > MaxFailCount)
+                {
+                    TextMessageUtil util = new TextMessageUtil();
+
+                    foreach (String pNumber in PingerWatchdog.Config.PhoneNumbersToSendTo)
+                        util.SendMessage(pNumber, $"Lost connection to: {DeviceName} - {Address} @ {DateTime.Now}");
+
+                    Logger.Logger.Log(LogLevel.MESSAGE, $"Lost connection to: {DeviceName} - {Address}");
+
+                    //Kill the thread
+                    Enabled = false;
+                }
             }
             else
             {
                 FailedCount = 0;
                 
-                Logger.Logger.Log(LogLevel.DEBUG, $"Ping Success to {Address}");
+                Logger.Logger.Log(LogLevel.MESSAGE, $"Ping Success to {DeviceName} - {Address}");
             }
         }
     }

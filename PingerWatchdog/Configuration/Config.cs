@@ -1,12 +1,11 @@
 ﻿using System;
-using PingerWatchdog.Logger;
 
-namespace PingerWatchdog
+namespace PingerWatchdog.Configuration
 {
     public class Config
     {
         public String Site;
-        public String[] Ips;
+        public Device[] Devices;
         public Boolean SendEmail;
         public String EmailAddressToSendTo;
         public String EmailContentsToSend;
@@ -15,6 +14,7 @@ namespace PingerWatchdog
         public Int32 Port;
         public String Password; 
         public Boolean SendTextMessage;
+        public String FromNumber;
         public String[] PhoneNumbersToSendTo;
         public String TextMessageContents;
         public Int32 MilliSecondsBeforePing;
