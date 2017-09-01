@@ -1,0 +1,19 @@
+{
+    "site": "Allans Home Hardware", 
+    "ips": [
+      "192.168.1.1",
+      "192.168.1.254",
+      "192.168.1.20"
+    ],
+    "sendEmail": true, 
+    "emailAddressToSendTo": "support@techgalaxy.ca",
+    "emailContentsToSend": "Device(s) that lost connection at: ",
+    "sendTextMessage": true, 
+    "phoneNumberToSendTo": "1-705-465-0122",
+    "textMessageContents": "Device(s) that lost connection at: ",
+  
+    "milliSecondsBeforePing": 5000,
+    "maxFailedPingCount": 5,
+    
+    "logLevel": "FATAL"
+  }
