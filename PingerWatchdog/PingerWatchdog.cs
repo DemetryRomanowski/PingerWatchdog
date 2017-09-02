@@ -54,12 +54,22 @@ namespace PingerWatchdog
         /// </summary>
         public void Start()
         {
-            foreach (Device device in Config.Devices)
+            try
             {
-                PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing, device.Ip, device.Name);
-                Thread thread = new Thread(pinger.Run);
-                
-                thread.Start();
+                foreach (Device device in Config.Devices)
+                {
+                    PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing,
+                        device.Ip, device.Name);
+                    Thread thread = new Thread(pinger.Run);
+
+                    thread.Start();
+                }
+
+            }
+            catch 
+            {
+                Logger.Logger.Log(LogLevel.FATAL, "Some kind of error occured with the application");
+                return;
             }
 
             Console.ReadKey(); 

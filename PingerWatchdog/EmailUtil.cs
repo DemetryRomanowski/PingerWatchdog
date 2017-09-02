@@ -18,9 +18,14 @@ namespace PingerWatchdog
         /// </summary>
         public EmailUtil()
         {
-            mail = new MailMessage(PingerWatchdog.Config.FromAddress, PingerWatchdog.Config.EmailAddressToSendTo);
-            
+            mail = new MailMessage(PingerWatchdog.Config.FromAddress, PingerWatchdog.Config.EmailAddressToSendTo)
+            {
+                IsBodyHtml = true
+            };
+
             client.Port = 587;
+            client.EnableSsl = true; 
+
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
             client.Host = "smtp.office365.com";
@@ -39,6 +44,26 @@ namespace PingerWatchdog
                 mail.Subject = $"PING ERROR at {PingerWatchdog.Config.Site}";
                 mail.Body = Message;
                 mail.Attachments.Add(new Attachment(File.Open(LogFilePath, FileMode.Open, FileAccess.Read, FileShare.Read), LogFilePath));
+
+                
+                client.Send(mail);
+            }
+            catch (Exception e)
+            {
+                Logger.Logger.Log(LogLevel.ERROR, e.Message);
+            }
+        }
+        
+        /// <summary>
+        /// Send the message
+        /// </summary>
+        /// <param name="Message">The message contents</param>
+        public void SendMessage(String Message)
+        {
+            try
+            {
+                mail.Subject = $"PING ERROR at {PingerWatchdog.Config.Site}";
+                mail.Body = Message;
                 
                 client.Send(mail);
             }
