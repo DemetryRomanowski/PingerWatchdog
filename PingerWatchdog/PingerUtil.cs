@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Net;
 using System.Threading;
 using PingerWatchdog.Logger;
 
@@ -79,11 +81,24 @@ namespace PingerWatchdog
                 {
                     TextMessageUtil util = new TextMessageUtil();
 
+                    EmailUtil email = new EmailUtil();
+                    
+                    Logger.Logger.Log(
+                        LogLevel.MESSAGE, 
+                        $"Lost connection at {PingerWatchdog.Config.Site} to: {DeviceName} - {Address}");
+                    
                     foreach (String pNumber in PingerWatchdog.Config.PhoneNumbersToSendTo)
-                        util.SendMessage(pNumber, $"Lost connection to: {DeviceName} - {Address} @ {DateTime.Now}");
+                        util.SendMessage(pNumber, $"Lost connection at {PingerWatchdog.Config.Site} to: {DeviceName} - {Address} @ {DateTime.Now}");
 
-                    Logger.Logger.Log(LogLevel.MESSAGE, $"Lost connection to: {DeviceName} - {Address}");
-
+                    using (StreamWriter writer = new StreamWriter($"att_{Logger.Logger.FileName}"))
+                    {
+                        writer.Write(Logger.Logger.fileContents);
+                    }
+                    
+                    email.SendMessage(
+                        $"Lost connection at {PingerWatchdog.Config.Site} to: {DeviceName} - {Address} @ {DateTime.Now}", 
+                        $"att_{Logger.Logger.FileName}");
+                    
                     //Kill the thread
                     Enabled = false;
                 }

@@ -6,9 +6,13 @@ namespace PingerWatchdog.Logger
 {
     public static class Logger
     {
-        //The filename of the logfile
-        private static readonly String FileName = $"log_{DateTime.Now.ToFileTime()}.txt";
+        //TEMPORARY
+        public static String fileContents = ""; 
         
+        //The filename of the logfile
+        public static readonly String FileName = $"log_{DateTime.Now.ToFileTime()}.txt";
+        
+        //A mutex object to lock the file while writing to it
         private static readonly Object Mutex = new Object(); 
         
         /// <summary>
@@ -28,6 +32,7 @@ namespace PingerWatchdog.Logger
                     new StreamWriter(FileName, true))
                 {
                     fs.WriteLine(PrintLog(currentLevel, message));
+                    fileContents += $"{PrintLog(currentLevel, message)}\n";
                 }
             }
         }

@@ -12,10 +12,7 @@ namespace PingerWatchdog.TypeConverters
         /// <returns>The log level value</returns>
         public static LogLevel ConvertLogLevel(this String level)
         {
-            if (level.Equals("DEBUG")) return LogLevel.DEBUG;
-            if (level.Equals("WARN")) return LogLevel.WARN; 
-            if (level.Equals("ERROR")) return LogLevel.FATAL;
-            return level.Equals("FATAL") ? LogLevel.FATAL : LogLevel.DEBUG;
+            return (LogLevel) Enum.Parse(typeof(LogLevel), level);
         }
 
         /// <summary>
@@ -25,14 +22,7 @@ namespace PingerWatchdog.TypeConverters
         /// <returns>The name of the log level as a string</returns>
         public static String ConvertString(this LogLevel level)
         {
-            switch (level)
-            {
-                case LogLevel.DEBUG: return "DEBUG";
-                case LogLevel.WARN: return "WARN";
-                case LogLevel.ERROR: return "ERROR";
-                case LogLevel.FATAL: return "FATAL"; 
-                default: return null;
-            }
+            return Enum.GetName(level.GetType(), level); 
         }
     }
 }

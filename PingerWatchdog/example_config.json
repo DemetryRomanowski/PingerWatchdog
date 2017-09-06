@@ -1,21 +1,27 @@
 { 
     "Site": "Allans Home Hardware",
+
+    //Using nmap will disable custom ip list
+    //by using nmap will ping all devices on network
+    //Not suitable for most installations due to
+    //temporary devices on network or devices that get shutdown
+    "UseNmap" : false,     
+    "NmapCommand" : "-sn 192.168.1.0/24",
     
     "Devices": [
         {
-            "Ip": "", 
-            "Name": ""
+            "Ip": "192.168.1.1", 
+            "Name": "Router"
         },
         {
-            "Ip": "", 
-            "Name": ""
+            "Ip": "192.168.1.60", 
+            "Name": "Server"
         },
         {
-            "Ip": "", 
-            "Name": ""
+            "Ip": "192.168.1.254", 
+            "Name": "Server(Doesn't Exist)"
         }
     ],
-    
     
     "SendEmail": true,
     "EmailAddressToSendTo": "alerts@yourcompany.ca",
@@ -29,10 +35,10 @@
 
     //To send a text message you must have a twilio account
     "SendTextMessage": true,
-    "FromNumber": "+12048005280",
+    "FromNumber": "+120254585",
     "PhoneNumbersToSendTo": [
-        "+17054650122",
-        "+17052715704"
+        "+17052222222",
+        "+17052252222"
     ],
     "TextMessageContents": "Lost connection to devices listed: ",
     
