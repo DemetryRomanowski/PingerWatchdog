@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using System.Net;
 using System.Threading;
 using Newtonsoft.Json;
+using PingerWatchdog.Configuration;
 using PingerWatchdog.Logger;
 
 namespace PingerWatchdog
@@ -12,15 +12,30 @@ namespace PingerWatchdog
         /// <summary>
         /// The log level of the application
         /// </summary>
-        public static LogLevel LOG_LEVEL { get; set; }
+        public static LogLevel VISIBLE_LOG_LEVEL { get; set; }
 
         /// <summary>
         /// The config file deserialized
         /// </summary>
-        public Config Config => JsonConvert.DeserializeObject<Config>(ConfigContents); 
+        public static Config Config;
         
         //Get the contents of the config file
-        private static String ConfigContents => File.ReadAllText("config.json");
+        private static String ConfigContents
+        {
+            get
+            {
+                try
+                {
+                    return File.ReadAllText("config.json");
+                }
+                catch (Exception e)
+                {
+                    Logger.Logger.Log(LogLevel.FATAL, e.Message);
+                }
+
+                return ""; 
+            }
+        }
 
         /// <summary>
         /// Default ctor
@@ -28,6 +43,8 @@ namespace PingerWatchdog
         /// <param name="args">Array of cmdline arguments</param>
         public static void Main(String[] args)
         {
+            Config = JsonConvert.DeserializeObject<Config>(ConfigContents); 
+            
             PingerWatchdog watchdog = new PingerWatchdog();
             watchdog.Start();            
         }
@@ -37,7 +54,25 @@ namespace PingerWatchdog
         /// </summary>
         public void Start()
         {
-            
+            try
+            {
+                foreach (Device device in Config.Devices)
+                {
+                    PingerUtil pinger = new PingerUtil(Config.MaxFailedPingCount, Config.MilliSecondsBeforePing,
+                        device.Ip, device.Name);
+                    Thread thread = new Thread(pinger.Run);
+
+                    thread.Start();
+                }
+
+            }
+            catch 
+            {
+                Logger.Logger.Log(LogLevel.FATAL, "Some kind of error occured with the application");
+                return;
+            }
+
+            Console.ReadKey(); 
         }
     }
 }

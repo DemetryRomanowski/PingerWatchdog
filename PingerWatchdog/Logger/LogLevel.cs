@@ -9,6 +9,8 @@
         //Log errors and warnings
         ERROR, 
         //Log fatals, errors, and warnings
-        FATAL
+        FATAL,
+        //Log all messages
+        MESSAGE
     }
 }
