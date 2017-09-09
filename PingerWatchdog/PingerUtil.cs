@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Net.NetworkInformation;
 using System.Threading;
 using PingerWatchdog.Logger;
 
@@ -71,7 +72,9 @@ namespace PingerWatchdog
         /// </summary>
         private void Ping()
         {
-            if (!PingHelper.Ping(Address))
+            PingReply status = PingHelper.Ping(Address);
+            
+            if (status.Status != IPStatus.Success)
             {
                 FailedCount++;
 
@@ -107,7 +110,7 @@ namespace PingerWatchdog
             {
                 FailedCount = 0;
                 
-                Logger.Logger.Log(LogLevel.MESSAGE, $"Ping Success to {DeviceName} - {Address}");
+                Logger.Logger.Log(LogLevel.MESSAGE, $"Ping Success to {DeviceName} - {Address} for: {status.RoundtripTime}");
             }
         }
     }

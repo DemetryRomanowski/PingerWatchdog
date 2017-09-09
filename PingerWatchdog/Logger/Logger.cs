@@ -33,6 +33,7 @@ namespace PingerWatchdog.Logger
                 {
                     fs.WriteLine(PrintLog(currentLevel, message));
                     fileContents += $"{PrintLog(currentLevel, message)}\n";
+                    
                 }
             }
         }

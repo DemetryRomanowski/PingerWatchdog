@@ -12,7 +12,7 @@ namespace PingerWatchdog
         /// </summary>
         /// <param name="address">The address to ping</param>
         /// <returns>True if the ping was a success</returns>
-        public static Boolean Ping(String address)
+        public static PingReply Ping(String address)
         {
             try
             {
@@ -21,21 +21,19 @@ namespace PingerWatchdog
                 PingReply result = ping.Send(address);
 
                 Debug.Assert(result != null, "Now you fucked up...");
-
-                return result.Status.ToString() == "Success";
+                
+                return result;
             }
             catch (NetworkInformationException)
             {
                 Logger.Logger.Log(LogLevel.ERROR, "Lost entire network connection");
-
-                return false;
+                return null;
             }
             catch (Exception)
             {
                 Logger.Logger.Log(LogLevel.FATAL, "Something went wrong...");
-
-                return false;
-            }
+                return null;
+            }    
         }
     }
 }
